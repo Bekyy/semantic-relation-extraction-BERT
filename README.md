@@ -92,6 +92,25 @@ for w1, w2 in zip(word_list1, word_list2):
     predicted_relation = predict_relation(w1, w2)
     print(f"The predicted relationship between '{w1}' and '{w2}' is: {predicted_relation}")
 ```
+## Model explainability
+* LIME is used to explain the model
+To apply LIME:
+```python
+# Initialize the LIME explainer
+explainer = LimeTextExplainer(class_names=label_map.keys())
+
+# Example text for explanation (replace this with actual samples)
+example_texts = ["ፍቅር ጥላቻ", "በላ ተመገበ"]  # Replace with actual word pairs
+
+# Generate explanations
+for text in example_texts:
+    exp = explainer.explain_instance(text, predict_fn, num_features=10)
+
+    # Show the explanation
+    exp.show_in_notebook(text=True)
+```
+![image](https://github.com/user-attachments/assets/f43c7c62-c31f-4bc3-accc-171735d42adf)
+
 ## 📦 Installation & Dependencies
 To install the required dependencies:
 ```bash
