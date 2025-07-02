@@ -2,15 +2,15 @@
 
 ## 📌 Project Overview
 
-This project focuses on extracting semantic relation between a pair of word for Amharic language using a fine-tuned pretrained transformer model. The model is trained to learn word relationships, leveraging BERT for classification task.
+This project focuses on extracting the semantic relation between a pair of words for the Amharic language using a pretrained transformer model. The model is fine-tuned to learn word relationships, leveraging BERT for a classification task.
 
 ## 🚀 Features
 
 * Fine-tuned Davlan/bert-base-multilingual-cased-finetuned-amharic for Amharic semantic relation extraction.
 
-* Training on a structured dataset containing Amharic word pairs labeled as synonym,antonyms, homonym and hypernyms.
+* Training on a structured dataset containing Amharic word pairs labeled as synonyms, antonyms, homonyms, and hypernyms.
 
-* Evaluation using  precision, recall, f1-score and accuracy metrics.
+* Evaluation using  precision, recall, ,F1-score and accuracy metrics.
 
 * Deployment-ready implementation using Hugging Face Transformers.
 
