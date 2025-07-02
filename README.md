@@ -92,6 +92,8 @@ for w1, w2 in zip(word_list1, word_list2):
     predicted_relation = predict_relation(w1, w2)
     print(f"The predicted relationship between '{w1}' and '{w2}' is: {predicted_relation}")
 ```
+![image](https://github.com/user-attachments/assets/7a93293c-83db-4094-b423-53ddb35895b3)
+
 ## Model explainability
 * LIME is used to explain the fine-tuned model
 ```python
