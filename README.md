@@ -93,8 +93,7 @@ for w1, w2 in zip(word_list1, word_list2):
     print(f"The predicted relationship between '{w1}' and '{w2}' is: {predicted_relation}")
 ```
 ## Model explainability
-* LIME is used to explain the model
-To apply LIME:
+* LIME is used to explain the fine-tuned model
 ```python
 # Initialize the LIME explainer
 explainer = LimeTextExplainer(class_names=label_map.keys())
